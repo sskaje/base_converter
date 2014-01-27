@@ -1,7 +1,66 @@
 <?php
-
+/**
+ * Base n Encode/Decode
+ *   n is power of 2
+ *
+ * @author sskaje (https://sskaje.me)
+ */
 class BaseConverter
 {
+    static public function Base2()
+    {
+        $char_table = "01";
+        $exp = 1;
+        $pad = "";
+
+        return new BaseConverterBitSplitMSB($exp, $char_table, $pad);
+    }
+    
+    static public function Base2LSB()
+    {
+        $char_table = "01";
+        $exp = 1;
+        $pad = "";
+
+        return new BaseConverterBitSplitLSB($exp, $char_table, $pad);
+    }
+
+    static public function Base4()
+    {
+        $char_table = "0123";
+        $exp = 2;
+        $pad = "";
+
+        return new BaseConverterBitSplitMSB($exp, $char_table, $pad);
+    }
+    
+    static public function Base4LSB()
+    {
+        $char_table = "0123";
+        $exp = 2;
+        $pad = "";
+
+        return new BaseConverterBitSplitLSB($exp, $char_table, $pad);
+    }
+
+    static public function Base8()
+    {
+        $char_table = "01234567";
+        $exp = 3;
+        $pad = "";
+
+        return new BaseConverterBitSplitMSB($exp, $char_table, $pad);
+    }
+    
+    static public function Base8LSB()
+    {
+        $char_table = "01234567";
+        $exp = 3;
+        $pad = "";
+
+        return new BaseConverterBitSplitLSB($exp, $char_table, $pad);
+    }
+
     static public function Base16()
     {
         $char_table = '0123456789ABCDEF';
