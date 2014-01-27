@@ -4,6 +4,7 @@ BaseEncode
 Author: sskaje
 
 PHP implementions for 
+
 	Base64 Encode/Decode, 
 	Base32 Encode/Decode, 
 	Base16 Encode/Decode, 
