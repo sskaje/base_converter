@@ -2,6 +2,9 @@
 require(__DIR__ . '/converter.class.php');
 
 $s = "Man";
+if (isset($argv[1])) {
+    $s = $argv[1];
+}
 var_dump($s);
 #var_dump(bin2hex($s));
 
