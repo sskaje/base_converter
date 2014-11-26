@@ -78,3 +78,15 @@ $s = BaseConverter::Base64LSB()->Decode($s);
 var_dump($s);
 
 
+echo "Base32VMware Encode & Decode\n";
+$s = BaseConverter::Base32VMware()->Encode($s);
+var_dump($s);
+$s = BaseConverter::Base32VMware()->Decode($s);
+var_dump($s);
+echo "Base32VMwareLSB Encode & Decode\n";
+$s = BaseConverter::Base32VMwareLSB()->Encode($s);
+var_dump($s);
+$s = BaseConverter::Base32VMwareLSB()->Decode($s);
+var_dump($s);
+
+

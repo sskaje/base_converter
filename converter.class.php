@@ -72,12 +72,22 @@ class BaseConverter
 
     static public function Base32()
     {
+        $char_table = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+        $exp = 5;
+        $pad = '';
+
+        return new BaseConverterBitSplitMSB($exp, $char_table, $pad);
+    }
+
+    static public function Base32VMware()
+    {
         $char_table = '0123456789ACDEFGHJKLMNPQRTUVWXYZ';
         $exp = 5;
         $pad = '';
 
         return new BaseConverterBitSplitMSB($exp, $char_table, $pad);
     }
+
 
     static public function Base64()
     {
@@ -96,9 +106,18 @@ class BaseConverter
         return new BaseConverterBitSplitLSB($exp, $char_table, $pad);
     }
 
-    static public function Base32LSB()
+    static public function Base32VMwareLSB()
     {
         $char_table = '0123456789ACDEFGHJKLMNPQRTUVWXYZ';
+        $exp = 5;
+        $pad = '';
+
+        return new BaseConverterBitSplitLSB($exp, $char_table, $pad);
+    }
+
+    static public function Base32LSB()
+    {
+        $char_table = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
         $exp = 5;
         $pad = '';
 

@@ -3,7 +3,7 @@ BaseEncode
 
 Author: sskaje
 
-PHP implementions for 
+PHP implementions for RFC 3548 and another Base32 used by VMware.
 
 	Base64 Encode/Decode, 
 	Base32 Encode/Decode, 
