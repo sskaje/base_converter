@@ -1,0 +1,16 @@
+{
+    "name": "sskaje/BaseEncode",
+    "description": "sskaje's BaseXX Encode/Decode class, a PHP implemention of RFC 3548, supports Base16/Base32/Base64 in both LSB and MSB, and another Base32 used by VMware",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sskaje",
+            "email": "sskaje@gmail.com",
+            "homepage": "https://sskaje.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
